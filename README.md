@@ -16,6 +16,12 @@
     sudo rpm --import http://pkg.jenkins.io/redhat-stable/jenkins.io.key
     sudo yum install jenkins -y
     sudo service jenkins start
+    
+    You will get error for java part: install java and start the jenkins
+    
+![image](https://user-images.githubusercontent.com/54719289/117429679-30a68b00-af1f-11eb-9944-5a93e958f9c1.png)
+
+    
 # Add jenkins user docker group
     usermod -aG docker jenkins
 # Provide sudo permissions for jenkins user
