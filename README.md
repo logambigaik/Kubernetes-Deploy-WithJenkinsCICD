@@ -76,10 +76,13 @@
   >> issue is jenkins user doesnt have access for sudo hence its failed.
   >> So include sudo permission under  vi /etc/sudoers
   
+  ![image](https://user-images.githubusercontent.com/54719289/117477737-45524580-af56-11eb-8bc8-35d9677b644d.png)
+
   
   ![image](https://user-images.githubusercontent.com/58024415/96358243-ae8d7b00-1122-11eb-89ef-f68a7bee8273.png)
   
-  
+  ![image](https://user-images.githubusercontent.com/54719289/117477667-310e4880-af56-11eb-8356-607768a69384.png)
+
   
 # Goto Web UI and Check output of application
    http://ad5ab72d8d77042768e8994647f637e1-1324271138.us-east-1.elb.amazonaws.com:8080/
