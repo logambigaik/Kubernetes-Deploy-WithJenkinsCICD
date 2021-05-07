@@ -57,6 +57,11 @@
 ![image](https://user-images.githubusercontent.com/54719289/117446793-85a0cc00-af34-11eb-8973-fa7742ba42e8.png)
 
 
+# For Docker credential (pipeline syntax:
+
+![image](https://user-images.githubusercontent.com/54719289/117449444-e54ca680-af37-11eb-9e03-4de3b08cd466.png)
+
+
 # Add JenkinsFile Content inside pipeline section
   ![image](https://user-images.githubusercontent.com/58024415/96358243-ae8d7b00-1122-11eb-89ef-f68a7bee8273.png)
 # Goto Web UI and Check output of application
