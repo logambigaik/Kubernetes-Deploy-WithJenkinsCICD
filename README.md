@@ -54,7 +54,14 @@
 ![image](https://user-images.githubusercontent.com/54719289/117446636-41adc700-af34-11eb-90ed-37a7d3be02ea.png)
 ![image](https://user-images.githubusercontent.com/54719289/117446769-7ae63700-af34-11eb-8b2e-e03cf7d7c643.png)
 
+# For docker crendtial
 ![image](https://user-images.githubusercontent.com/54719289/117446793-85a0cc00-af34-11eb-8973-fa7742ba42e8.png)
+
+# For AWS cedential:
+![image](https://user-images.githubusercontent.com/54719289/117468158-4ed6b000-af4c-11eb-8cac-764ac2fc6478.png)
+
+#For k8s credential:
+![image](https://user-images.githubusercontent.com/54719289/117468050-35356880-af4c-11eb-8d06-927b1456039a.png)
 
 
 # For Docker credential (pipeline syntax:
