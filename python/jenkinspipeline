@@ -22,6 +22,17 @@ pipeline{
                 sh 'docker push klogambigai/flaskapi-cicd:v1'
             }
         }
+        stage('Deploy into kubernetes'){
+            steps{
+                withCredentials([aws(accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'aws-credential', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY')]) {
+                        withCredentials([kubeconfigFile(credentialsId: 'kube-config', variable: 'KUBECONFIG')]) {
+                            sh 'sudo kubectl apply -f /Kubernetes-Deploy-WithJenkinsCICD/python/deploy.yml'
+                            sh 'sudo kubectl apply -f /Kubernetes-Deploy-WithJenkinsCICD/python/service.yml'
+                            
+                        }
+                    }
+            }
+        }
         
     }
 }
