@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-deployment
+  labels:
+    app: python-deploy
+spec:
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 25%
+      maxSurge: 1
+  selector:
+    matchLabels:
+      app: python-webapp
+  template:
+    metadata:
+      labels:
+        app: python-webapp
+    spec:
+      containers:
+      - name: python-webapp
+        image: klogambigai/flaskapi-cicd
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8000
+
