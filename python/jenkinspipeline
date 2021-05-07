@@ -1,0 +1,27 @@
+pipeline{
+    agent any
+    stages{
+        stage('SCM'){
+            steps{
+                git 'https://github.com/logambigaik/Kubernetes-Deploy-WithJenkinsCICD.git'
+            }
+        }
+        stage('Docker build')
+        {
+            steps{
+                sh 'docker build -t klogambigai/flaskapi-cicd:v1 -f /Kubernetes-Deploy-WithJenkinsCICD/python/Dockerfile .'
+            }
+        }
+        stage('Docker Push'){
+            steps{
+                
+                withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'password', usernameVariable: 'username')]) {
+                    // some block
+                    sh 'docker login -u ${username} -p ${password}'
+                }
+                sh 'docker push klogambigai/flaskapi-cicd:v1'
+            }
+        }
+        
+    }
+}
