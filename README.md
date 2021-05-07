@@ -38,13 +38,25 @@
     - CloudBees AWS Credentials
     - Kubernetes Credentials
     - Kubernetes Continuous Deploy
+
+
+![image](https://user-images.githubusercontent.com/54719289/117446258-b6343600-af33-11eb-85a7-fa709814f1d9.png)
+
 # Create Credentials
     - docker credentials
          (credentialsId: 'docker_credentials',  username: 'username', password: 'password')
     - kubernetes config credentials
          (credentialsId: 'kube_config', variable: 'KUBECONFIG')
-    - aws configure credentials
+         
+     - aws configure credentials
          (accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'aws_configure', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY')
+
+![image](https://user-images.githubusercontent.com/54719289/117446636-41adc700-af34-11eb-90ed-37a7d3be02ea.png)
+![image](https://user-images.githubusercontent.com/54719289/117446769-7ae63700-af34-11eb-8b2e-e03cf7d7c643.png)
+
+![image](https://user-images.githubusercontent.com/54719289/117446793-85a0cc00-af34-11eb-8973-fa7742ba42e8.png)
+
+
 # Add JenkinsFile Content inside pipeline section
   ![image](https://user-images.githubusercontent.com/58024415/96358243-ae8d7b00-1122-11eb-89ef-f68a7bee8273.png)
 # Goto Web UI and Check output of application
